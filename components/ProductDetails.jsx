@@ -26,7 +26,7 @@ export default function ProductDetails({ product }) {
 
   const handleWhatsAppOrder = () => {
     // ... (This function remains exactly the same)
-    const phoneNumber = "919876543210";
+    const phoneNumber = "1234567890";
     const totalPrice = product.price * quantity;
     const message = `Hi! I would like to order:\n\n🌱 *Product:* ${product.name}\n💰 *Price:* ${formatPrice(product.price)} per bag\n📦 *Quantity:* ${quantity} bags\n💵 *Total:* ${formatPrice(totalPrice)}\n\nPlease confirm availability and delivery details. Thank you!`;
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
